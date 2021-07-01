@@ -38,3 +38,4 @@ Unified Telemetry is used for Device Analytics, the device will send analytical 
 - IS DEVICE CONNECTED TO THE PHONE
 - IS USER HORIZON VERIFIED
 - ALL APPLICATION ID, INSTALL TIME, ERRORS, PACKAGE HASH, PACKAGE MANIFEST, PACKAGE PACKAGE SIGNATURES
+The device sends this data to thee endpoint htttps://graph.facebook.com/logging_client_events
