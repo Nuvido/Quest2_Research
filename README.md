@@ -1,4 +1,4 @@
-# Quest2_Research
+# Quest_Research
 ## Background Information
 The oculus quest 2 is a HMD running the Snapdragon XR2. The device runs on a highly modified version of Android 10, running the 2020 September security patch.
 ## Glossary
@@ -9,6 +9,11 @@ Throughout this research, you may come across a few quest specific abbreviations
 - Telemetry (Tracking)
 - Horizon (Social Services)
 - Dogfood (In-House Beta)
+## Quest Devices
+1. Monterey (Quest)
+2. Del Mar (Quest 2)
+3. Seacliff (Unkown has eye tracking)
+
 ## App Signatures
 Currently All apps are signed via 3 Signatures.
 1. Oculus Vr LLC
