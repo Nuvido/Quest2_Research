@@ -79,7 +79,8 @@ VrShell is arguably the most important application on the entire device, it mana
 ### VrDriver
 VrDriver manages certain system variables i.e 120hz support or hand tracking frequency. The application seems to mostly communicate with VR applications/games regarding additional features or permissions.
 ### System UX
-Runs UX related code, i.e spinners, buttons, checkbox's etc
+Runs UX related code, i.e spinners, buttons, checkbox's etc.
+[SYSTEMUX Intents](another-page.md)
 ### OSUpdater
 Retrieves os update from servers and installs the update, also monitors system vital signs i.e battery and wifi. The application also logs every detail of the update.
 ### OSUpdater
