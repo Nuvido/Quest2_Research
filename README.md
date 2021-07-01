@@ -38,6 +38,7 @@ Unified Telemetry is used for Device Analytics, the device will send analytical 
 - IS DEVICE CONNECTED TO THE PHONE
 - IS USER HORIZON VERIFIED
 - ALL APPLICATION ID, INSTALL TIME, ERRORS, PACKAGE HASH, PACKAGE MANIFEST, PACKAGE PACKAGE SIGNATURES
+
 The device sends this data to thee endpoint htttps://graph.facebook.com/logging_client_events the post packet contains a X-FB debug header alongside a specially crafted user-agent containing information such as:
 - FB_APP_NAME = "FBAN";
 - FB_APP_VERSION = "FBAV";
