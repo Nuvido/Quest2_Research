@@ -11,6 +11,24 @@ Throughout this research, you may come across a few quest specific abbreviations
 - Dogfood (In-House Beta)
 ## App Signatures
 
+
+
+## Network Config
+Clear text is not premitted if any of the urls contain the following, you should be able to change this by changing the net config file found in all system apps.
+fbcdn.net
+fbsbx.com
+facebookcorewwwi.onion
+fbcdn23dssr3jqnq.onion
+fbsbx2q4mvcl63pw.onion
+instagram.com
+cdninstagram.com
+workplace.com
+oculus.com
+facebookvirtualassistant.com
+discoverapp.com
+freebasics.com
+internet.org
+        
 ## System Applications
 The Quest 2 Operating system has a plethora of system applications all that have their purpose, here are the following system applications and a summary of what they do.
 ### Unified Telemetry
@@ -62,4 +80,7 @@ VrShell is arguably the most important application on the entire device, it mana
 VrDriver manages certain system variables i.e 120hz support or hand tracking frequency. The application seems to mostly communicate with VR applications/games regarding additional features or permissions.
 ### System UX
 Runs UX related code, i.e spinners, buttons, checkbox's etc
-### System UX
+### OSUpdater
+Retrieves os update from servers and installs the update, also monitors system vital signs i.e battery and wifi. The application also logs every detail of the update.
+### OSUpdater
+
