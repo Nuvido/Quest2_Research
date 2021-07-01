@@ -1,7 +1,7 @@
 # Quest2_Research
 ## Background Information
 The oculus quest 2 is a HMD running the Snapdragon XR2. The device runs on a highly modified version of Android 10, running the 2020 September security patch.
-##Glossary
+## Glossary
 Throughout this research, you may come across a few quest specific abbreviations or terms.
 - OCMS (Oculus Media Services)
 - NUX (New User Experience)
