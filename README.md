@@ -8,8 +8,33 @@ Throughout this research, you may come across a few quest specific abbreviations
 - GK (Gatekeeper)
 - Telemetry (Tracking)
 - Horizon (Social Services)
+## App Signatures
 
 ## System Applications
 The Quest 2 Operating system has a plethora of system applications all that have their purpose, here are the following system applications and a summary of what they do.
 ### Unified Telemetry
-
+Unified Telemetry is used for Device Analytics, the device will send analytical data consisting of key information the following is what is sent in an average Telemetry event.
+- BOOT REASON, LAST BOOT TIME,
+- APP CRASH
+- AUDIO COLLECTOR
+- BATTERY SNAPSHOT
+- SCREEN STATUS
+- IS TRUSTED USER
+- FILE OPERATIONS
+- OS EXACT SIZE 
+- APPLICATION SIZE (DALVIK)
+- BATTERY SERIAL NUMBER
+- BATTERY CAPACITY, RESISTANCE, CURRENT PERCENT, TEMP, CURRENT VOLTAGE, CHARGING STATUS, BATTERY HEALTH, BATTERY UPTIME (/sys/kernel/debug/wakeup_sources)
+- SCREEN EVENTS (NOT YET IMPLEMENTED)
+- NETWORK TYPE, ENCRYPTION, SSID, NETWORK FREQUENCY, QUALITY OF NETWORK, DECIBELS, IS NETWORK BLACKLISTED, WIFI CAPABILLITYS CHECK, INTERNET SERVICE PROVIDER (CODE READY NOT YET USED)
+- GEOLOCATION
+- USER APP INITIAL
+- CURRENT PARTY CHAT CONNECTION STATUS, VOIP STATUS
+- CURRENT USER
+- APPLICATIONS RUNNING
+- DEVICE ID
+- PIGEON IDENTITY
+- TIME
+- IS DEVICE CONNECTED TO THE PHONE
+- IS USER HORIZON VERIFIED
+- ALL APPLICATION ID, INSTALL TIME, ERRORS, PACKAGE HASH, PACKAGE MANIFEST, PACKAGE PACKAGE SIGNATURES
