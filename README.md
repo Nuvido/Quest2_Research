@@ -12,7 +12,7 @@ Throughout this research, you may come across a few quest specific abbreviations
 ## App Signatures
 Currently All apps are signed via 3 Signatures.
 1. Oculus Vr LLC
-2. Sceurity@oculus.com
+2. Security@oculus.com
 3. Facebook Technologies LLC
 
 
