@@ -92,5 +92,8 @@ Runs UX related code, i.e spinners, buttons, checkbox's etc.
 [SystemUx Intents as of v29](SystemUX_Intents)
 ### OSUpdater
 Retrieves Latest OS update from Oculus servers and installs the update, Also monitors system vital signs such as battery and wifi. The application logs many details of the update.
-### OSUpdater
+### ChargeControl
+Application is meant to only be accessible for employes however, with a specialy crafted intent you are able to access the application (com.oculus.os.chargecontrol.action.start or ). The application allows for the limitation of the devices battery capacity. 
+### Assistant
+The oculus Assistant is a virtual assistant for the quest. The application retrieves a set of preferences from a server, similar to GK'S.
 
