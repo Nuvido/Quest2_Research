@@ -13,10 +13,18 @@ Throughout this research, you may come across a few quest specific abbreviations
 1. Monterey (Quest)
 2. Del Mar (Quest 2)
 3. Seacliff (Unkown has eye tracking)
+
+## A note about the Quest 2
+The Quest 2 Formally is running the XR2 However, code libaries suggest it is infact running the sm8250 (Qualcomm 865 5G), This could reason that the Quest 2 was originally developed for the sm8250 and then switched to the XR2.
+
 ## Analysing The Firmware 
  
 ### Recovery Image
 Similarly to other android devices, android OTA updates come in two forms incremental or full. Full updates are easier to analyze as they don't rely on previously existing updates. To start off with, let's begin with the recovery image. The recovery image contains information, code, and images related to the device if it was in a "Bare-bones" state. Using Carliv image kitchen, we can unpack the image to see its contents. With this recovery image there are only (IDK) files populated, the first of which is ODM, which contains information of the location of other files, the next populated file is RES, this file contains the images you would see when you put your device in recovery, below are the images found within the file. The next populated file is system. System contains bin commands alongside OTA-Certs.
+
+### System Image
+The system image is very similar to the recovery image in its structure, however, it contains a lot more information and files.
+
 
 ## App Signatures
 Currently All system apps are signed via either one of the 3 Signatures.
