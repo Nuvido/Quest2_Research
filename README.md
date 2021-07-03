@@ -89,8 +89,8 @@ VrDriver manages certain system variables i.e 120hz support or hand tracking fre
 ### System UX
 Runs UX related code, i.e spinners, buttons, checkbox's etc.
 
-[SysemUx Intents v29](SystemUX_Intents)
+[SystemUx Intents as of v29](SystemUX_Intents)
 ### OSUpdater
-Retrieves os update from servers and installs the update, also monitors system vital signs i.e battery and wifi. The application also logs every detail of the update.
+Retrieves Latest OS update from Oculus servers and installs the update, Also monitors system vital signs such as battery and wifi. The application logs many details of the update.
 ### OSUpdater
 
