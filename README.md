@@ -1,6 +1,6 @@
 # Quest_Research
 ## Background Information
-The oculus quest 2 is a HMD running the Snapdragon XR2. The device runs on a highly modified version of Android 10, running the 2020 September security patch.
+The Oculus Quest 2 is a HMD running the Snapdragon XR2. The device runs on a highly modified version of Android 10, running the 2020 September security patch.
 ## Glossary
 Throughout this research, you may come across a few quest specific abbreviations or terms.
 - OCMS (Oculus Media Services)
@@ -13,6 +13,10 @@ Throughout this research, you may come across a few quest specific abbreviations
 1. Monterey (Quest)
 2. Del Mar (Quest 2)
 3. Seacliff (Unkown has eye tracking)
+## Analysing The Firmware 
+ 
+### Recovery Image
+Similarly to other android devices, android OTA updates come in two forms incremental or full. Full updates are easier to analyze as they don't rely on previously existing updates. To start off with, let's begin with the recovery image. The recovery image contains information, code, and images related to the device if it was in a "Bare-bones" state. Using Carliv image kitchen, we can unpack the image to see its contents. With this recovery image there are only (IDK) files populated, the first of which is ODM, which contains information of the location of other files, the next populated file is RES, this file contains the images you would see when you put your device in recovery, below are the images found within the file. The next populated file is system. System contains bin commands alongside OTA-Certs.
 
 ## App Signatures
 Currently All system apps are signed via either one of the 3 Signatures.
