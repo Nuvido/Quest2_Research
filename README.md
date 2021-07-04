@@ -111,4 +111,25 @@ Retrieves Latest OS update from Oculus servers and installs the update, Also mon
 Application is meant to only be accessible for employes however, with a specialy crafted intent you are able to access the application (com.oculus.os.chargecontrol.action.start or ). The application allows for the limitation of the devices battery capacity. 
 ### Assistant
 The oculus Assistant is a virtual assistant for the quest. The application retrieves a set of preferences from a server, similar to GK'S.
-
+### YADI
+Yadi is a service/application installed on every quest device, it fullfils the need for internal package installation and updating. It allows for fcabeook to deploy applications on internal devices. An intresting note is that the application refers to itself as YadiOs
+### Device Auth Server
+This application pings the url graph.facebook-hardware.com and requests for a token (sha256WithRSAEncryption) internal versions of the device allow for a different sandbox to be used as with the structure "graph." + sandbox + ".facebook-hardware.com". Debug devices ping ovr.deviceauth.sandbox.facebook-hardware.com
+### Oculus Bug Reporter
+As the name implies this is the service responsible for user bug reports. When a bug report is intiated it checks the following.
+- is productivity_mode_enabled
+- Using Infinite Office Platform
+- User description
+- All system application versions
+It will then send a post packet to the url https://graph.oculus.com/report_bug This packet contains the above information and more.
+### QALAB
+Not much is known about this application as it is not user accessible. The only user facing part of this application is a reset service which resets the device after a counter counts down from 5 Minutes The service is com.oculus.qalab\
+### Stats Collector
+As the name implies, it collects stats from the device. Stats such as the following are collected.
+- oculus_mobile_disk_io_by_uid
+- culus_mobile_lmk_kill_events
+- oculus_mobile_low_storage_events
+- oculus_mobile_thermal_throttling_events
+- culus_mobile_wall_clock_events
+- culus_mobile_wifi_enabled_events
+- Various BLE information
