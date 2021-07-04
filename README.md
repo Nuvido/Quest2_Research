@@ -112,7 +112,7 @@ Application is meant to only be accessible for employes however, with a specialy
 ### Assistant
 The oculus Assistant is a virtual assistant for the quest. The application retrieves a set of preferences from a server, similar to GK'S.
 ### YADI
-Yadi is a service/application installed on every quest device, it fullfils the need for internal package installation and updating. It allows for fcabeook to deploy applications on internal devices. An intresting note is that the application refers to itself as YadiOs
+Yadi is a service/application installed on every quest device, it fullfils the need for internal package installation and updating. It allows for facebook to deploy applications on internal devices. An intresting note is that the application refers to itself as YadiOs
 ### Device Auth Server
 This application pings the url graph.facebook-hardware.com and requests for a token (sha256WithRSAEncryption) internal versions of the device allow for a different sandbox to be used as with the structure "graph." + sandbox + ".facebook-hardware.com". Debug devices ping ovr.deviceauth.sandbox.facebook-hardware.com
 ### Oculus Bug Reporter
@@ -133,3 +133,18 @@ As the name implies, it collects stats from the device. Stats such as the follow
 - culus_mobile_wall_clock_events
 - culus_mobile_wifi_enabled_events
 - Various BLE information
+### Companion Server
+Companion server is an admin application that manages the device and does the following.
+- Controlls controllers and monitors vital signs
+- Manages OS updater Intents
+- Manages screen shoots and videos
+- Tells other applications what the current HMD is capable of, in a software view
+- Sends Data to Oculus mobile application
+- Manages BT connection with TWILIGHT (Mobile oculus app)
+- Manages Anti Piracy Kill Switch
+- Phone Notifications & Analytics on those notifications
+### UserServer Version 1 & 2
+Manages device users and settings such as application sharing, or syncing or user information. 
+### Mixed Reality
+The application only checks whether a specific GK is enabled, has to do with AR
+### Enterprise Server
