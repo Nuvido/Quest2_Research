@@ -148,3 +148,14 @@ Manages device users and settings such as application sharing, or syncing or use
 ### Mixed Reality
 The application only checks whether a specific GK is enabled, has to do with AR
 ### Enterprise Server
+The Enterprise Server is an application installed on all quests, if a buisness where to purchase the Enterprise server, oculus would change a GK within the device Enterprise server. The server communicates mostly towards the web facing portal for the management and deployment of the quest. Allows for the adjusting of these settings.
+- Whiteboard Guardian
+- Swapping of controller buttons
+- Update Scheldules
+- Remote wipe
+### Vr Alert Services
+Alerts the user if any emergency events are occuring on the device. for example, if a device overheats this service is called. The following alerts are managed by the service.
+- Fan malfunction
+- Thermal Alerts
+### Explore App
+When a user firsts boots their vr headset this is the first panel a user will see. Application has mentions of Pass Through filters. The intent to launch the application is apk://com.oculus.explore
