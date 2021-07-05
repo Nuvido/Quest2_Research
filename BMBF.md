@@ -6,7 +6,6 @@
 
 ### BMBF.dll
 BMBF.dll contains the Main activity, logging tools, feed config
-- [Constants](SystemUX_Intents)
 
 #### Main Activity
 Main activity first begins with importing varies system and custom libaries. The application then begins to create a web view instance, and then checks whether it has write permissions.  The webview instance uses the following settings.
@@ -42,4 +41,8 @@ BMBF service is repsonsible for getting/making a cache file containg various ser
 - Checks whether Temp APK has specific headers. 
 - Adds custom libmodloader.so & libmain.so & libunity.so & libBMBFmod.so
 - Signs apk with a [Private Key](SystemUX_Intents)
+#### Constants
+
+The - [Constants](SystemUX_Intents) present in the code reveal some innerworkings of beatsaver.
+
 
