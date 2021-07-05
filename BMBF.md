@@ -34,3 +34,10 @@ When a user intitiate a user server the following code is executed.
 #### BMBF Service
 BMBF service is repsonsible for getting/making a cache file containg various service logs.
 #### Beat Saber Modder
+- Copies original beatsaber apk to a temporary location
+- Prompts user to uninstall old beat saber application
+- In some cases will backup user data from the location /sdcard/Android/data/com.beatgames.beatsaber/files/PlayerData.dat to /sdcard/BMBFData/Backups/
+- Checks whether the following files exist. beatsaber-unmodded.apk, beatsaber-modded-donotuse.apk, 
+- Checks whether Temp APK has specific headers. 
+- Adds custom libmodloader.so & libmain.so & libunity.so & libBMBFmod.so
+- Signs apk with a private key
