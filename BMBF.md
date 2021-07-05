@@ -40,6 +40,6 @@ BMBF service is repsonsible for getting/making a cache file containg various ser
 - Checks whether the following files exist. beatsaber-unmodded.apk, beatsaber-modded-donotuse.apk, 
 - Checks whether Temp APK has specific headers. 
 - Adds custom libmodloader.so & libmain.so & libunity.so & libBMBFmod.so
-- Signs apk with a [Private Key](SystemUX_Intents)
+- Signs apk with a [Private Key](Cert)
 #### Constants
 The [Constants](SystemUX_Intents) present in the code reveal some innerworkings of beatsaver. More information can be found here [Beatsaver API](https://docs.beatsaver.com/)
