@@ -30,3 +30,7 @@ When a user intitiate a user server the following code is executed.
 - Application will look for wireless interfaces, then if there is none intitiates the server on 127.0.0.1, if one is found it will use the corresponding IP.
 - Starts a server on the ip, and a specific port.
 - User will go on the web server and is displayed with an index.html file. 
+- All users requests and interactions will be handled by the application
+#### BMBF Service
+BMBF service is repsonsible for getting/making a cache file containg various service logs.
+#### Beat Saber Modder
