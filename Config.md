@@ -1,0 +1,34 @@
+this._webServer.Router.AddRoute("GET", "beatsaber/config", new GetConfig(() => this.CurrentConfig));
+			this._webServer.Router.AddRoute("GET", "beatsaber/song/cover", new GetSongCover(this.qaeConfig, () => this.CurrentConfig));
+			this._webServer.Router.AddRoute("GET", "beatsaber/playlist/cover", new GetPlaylistCover(() => this.CurrentConfig, this.qaeConfig));
+			this._webServer.Router.AddRoute("GET", "beatsaber/mod/cover", new GetModCover(this.qaeConfig, () => this.CurrentConfig));
+			this._webServer.Router.AddRoute("POST", "beatsaber/upload", new PostFileUpload(this._mod, new ShowToastDelegate(this.ShowToast), () => this.ImportManager));
+			this._webServer.Router.AddRoute("POST", "beatsaber/commitconfig", new PostCommitConfig(this._mod, () => this.ImportManager, new ShowToastDelegate(this.ShowToast), new SendHostMessageDelegate(this.SendMessageToClient), () => this.Engine, () => this.CurrentConfig, new Action(this.SendConfigChangeMessage), () => this.CanSync(), new Action(this.KillBeatSaber), new Func<bool>(this.SaveCommittedConfigToDisk)));
+			this._webServer.Router.AddRoute("POST", "beatsaber/reloadsongfolders", new PostReloadSongFolders(this._mod, this.qaeConfig, new ShowToastDelegate(this.ShowToast), new SendHostMessageDelegate(this.SendMessageToClient), () => this.Engine, () => this.CurrentConfig, new Action(this.SendConfigChangeMessage), delegate(bool suppress)
+			{
+				this._suppressConfigChangeMessage = suppress;
+			}));
+			this._webServer.Router.AddRoute("GET", "mod/status", new GetModStatus(this._mod));
+			this._webServer.Router.AddRoute("GET", "version/latest", new GetLatestVersion());
+			this._webServer.Router.AddRoute("GET", "version/local", new GetLocalVersion());
+			this._webServer.Router.AddRoute("GET", "mod/netinfo", new GetNetInfo(this._webServer));
+			this._webServer.Router.AddRoute("POST", "mod/install/step1", new PostModInstallStep1(this._mod, new SendHostMessageDelegate(this.SendMessageToClient)));
+			this._webServer.Router.AddRoute("POST", "mod/install/step2", new PostModInstallStep2(this._mod, new SendHostMessageDelegate(this.SendMessageToClient)));
+			this._webServer.Router.AddRoute("POST", "mod/install/step3", new PostModInstallStep3(this._mod, new SendHostMessageDelegate(this.SendMessageToClient)));
+			this._webServer.Router.AddRoute("POST", "beatsaber/playlist/autocreate", new PostAutoCreatePlaylists(() => this.Engine, () => this.CurrentConfig));
+			this._webServer.Router.AddRoute("POST", "mod/resetassets", new PostResetAssets(this._mod, new ShowToastDelegate(this.ShowToast), new Action(this.SendConfigChangeMessage), new Action(this.FullEngineReset)));
+			this._webServer.Router.AddRoute("POST", "mod/uninstallbeatsaber", new PostUninstallBeatSaber(this._mod, new ShowToastDelegate(this.ShowToast)));
+			this._webServer.Router.AddRoute("DELETE", "/beatsaber/config", new DeletePendingConfig(new Action(this.SendConfigChangeMessage), new Action(this.FullEngineReset)));
+			this._webServer.Router.AddRoute("POST", "/mod/postlogs", new PostUploadLogs());
+			this._webServer.Router.AddRoute("GET", "/mod/images", new GetImages(this.qaeConfig));
+			this._webServer.Router.AddRoute("GET", "/mod/image", new GetImage(this.qaeConfig));
+			this._webServer.Router.AddRoute("POST", "/mod/exit", new PostExit(new Action(this.HardQuit)));
+			this._webServer.Router.AddRoute("POST", "/mod/package", new PostPackageAction(new Action<string>(this.SendPackageLaunch), new Action<string>(this.SendPackageStop)));
+			this._webServer.Router.AddRoute("PUT", "/beatsaber/config", new PutConfig(() => this.Engine, () => this.CurrentConfig, new Action(this.SendConfigChangeMessage)));
+			this._webServer.Router.AddRoute("POST", "/beatsaber/config/restore", new PostConfigRestore(() => this.Engine, () => this.qaeConfig, () => this.CurrentConfig, new Action(this.SendConfigChangeMessage), this._mod));
+			this._webServer.Router.AddRoute("GET", "/mod/startupstatus", new GetStartupStatus(() => this.GetSyncInfo(), () => this.CurrentConfig, this._mod, () => this.qaeConfig, () => this.Engine));
+			this._webServer.Router.AddRoute("GET", "/filesystem", new GetFileSystem());
+			this._webServer.Router.AddRoute("PUT", "/filesystem", new PutFileSystem());
+			this._webServer.Router.AddRoute("GET", "/beatsaber/sync", new GetSyncConfig(() => this.SyncManager));
+			this._webServer.Router.AddRoute("POST", "/beatsaber/sync", new PostSyncSync(() => this.SyncManager));
+			this._webServer.Router.AddRoute("POST", "/beatsaber/syncsaber/download", new PostSyncSync(() => this.SyncManager));
