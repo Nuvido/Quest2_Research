@@ -7,7 +7,7 @@
 ### BMBF.dll
 BMBF.dll contains the Main activity, logging tools, feed config
 
-#### Main Activity
+### Main Activity
 Main activity first begins with importing varies system and custom libaries. The application then begins to create a web view instance, and then checks whether it has write permissions.  The webview instance uses the following settings.
 ##### User Agent
 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36 BMBF_Quest/ 
