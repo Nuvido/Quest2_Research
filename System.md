@@ -24,10 +24,7 @@ Similarly to other android devices, android OTA updates come in two forms increm
 
 ### System Image
 The system image is very similar to the recovery image in its structure, however, it contains a lot more information and files. Some of the more important information can be found below.
-- [Default Permissions for device](SystemUX_Intents)
-- [API Whitelist](SystemUX_Intents)
-- [Doze Exemption](SystemUX_Intents)
-- [Default ](Prop.default)
+- [Default Props](prop.default)
 
 
 ## App Signatures
