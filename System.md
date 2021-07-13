@@ -27,7 +27,7 @@ The system image is very similar to the recovery image in its structure, however
 - [Default Permissions for device](SystemUX_Intents)
 - [API Whitelist](SystemUX_Intents)
 - [Doze Exemption](SystemUX_Intents)
-- [Default ](SystemUX_Intents)
+- [Default ](Prop.default)
 
 
 ## App Signatures
