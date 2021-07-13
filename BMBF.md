@@ -3,9 +3,9 @@
 ## Before We Start
 BMBF is 100% detectable on any oculus quest device, facebook have code ready to activate a "killswitch", there is no reason that facebook can ban you four using BMBF. BMBF also uses logging, thankfuly the level of logging is not to intrusive. The logging url used is http://logs-01.loggly.com/bulk/271fee44-1ebb-4629-861e-e15d8e5a4659/tag/
 
-## ANDROID MANIFEST
 
-## CODE
+## Analysing the Code
+BMBF Uses DLL files coded in XAMARIAN using the tool https://github.com/talshimoni/mono_unbundle we are able to "decrypt" them and then use DNSPY to analyze them
 
 ### BMBF.dll
 BMBF.dll contains the Main activity, logging tools, feed config
