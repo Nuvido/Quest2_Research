@@ -1,6 +1,6 @@
 # Quest2_Research
+A slow yet steady compilation of all Quest related software and the reverse enginering of said software.
 - [System Operating System and System Applications](System.md)
-- ![alt text](https://arvrtips.com/wp-content/uploads/2020/05/bmbf-logo.png)
 - [Analysing BMBF](BMBF.md)
 - [Analysing Youtube VR](System.md)
 
