@@ -34,6 +34,7 @@ When a user intitiate a user server the following code is executed.
 - Starts a server on the ip, and a specific port.
 - User will go on the web server and is displayed with an index.html file. 
 - All users requests and interactions will be handled by the application
+- The config Files for the server can be found [Here](Config.md)
 #### BMBF Service
 BMBF service is repsonsible for getting/making a cache file containg various service logs.
 #### Beat Saber Modder
