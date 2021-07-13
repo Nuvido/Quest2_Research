@@ -1,5 +1,5 @@
 # BMBF
-
+BMBF is a closed source android application which modifies the beatsaber application to allow for Mods, Custom Songs and Custom Textures. The application is made by the "Unicorns" a mysterious group with simingly no public facing representative.
 ## Before We Start
 BMBF is 100% detectable on any oculus quest device, facebook have code ready to activate a "killswitch", there is no reason that facebook can ban you four using BMBF. BMBF also uses logging, thankfuly the level of logging is not to intrusive. The logging url used is http://logs-01.loggly.com/bulk/271fee44-1ebb-4629-861e-e15d8e5a4659/tag/
 
@@ -34,7 +34,7 @@ When a user intitiate a user server the following code is executed.
 - Starts a server on the ip, and a specific port.
 - User will go on the web server and is displayed with an index.html file. 
 - All users requests and interactions will be handled by the application
-- The config Files for the server can be found [Here](Config.md)
+- The config Files for the server can be found [Here](Config)
 #### BMBF Service
 BMBF service is repsonsible for getting/making a cache file containg various service logs.
 #### Beat Saber Modder
