@@ -1,5 +1,5 @@
 # Quest2_Research
-A slow yet steady compilation of all Quest related software and the reverse enginering of quest software.
+A Compilation of finding of reverse enginnering the Quest OS and system applications, alongside the reverse enginnering of BMBF.
 - [System Operating System and System Applications](System.md)
 - [Analysing BMBF](BMBF.md)
 
