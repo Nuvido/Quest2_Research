@@ -5,7 +5,7 @@ BMBF is 100% detectable on any oculus quest device, facebook have code ready to 
 
 
 ## Analysing the Code
-BMBF Uses DLL files coded in XAMARIAN, to circumvent issues with reading the files we can use the XAMARIAN unpacking tool then we are able to unpack them, then we use DNSPY to analyze them. The following is information found within those DLL files.
+BMBF Uses DLL files coded in XAMARIAN, to read the files we have to use the [XAMARIAN unpacking tool](https://github.com/NickstaDB/xamarin-decompress) then we are able to unpack them, then we use DNSPY to analyze them. The following is information found within those DLL files.
 
 ## BMBF.dll
 The BMBF.dll contains the Main Activity, Logging tools and Feed config, the follwoing files below where found in the file.
