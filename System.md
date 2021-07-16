@@ -79,7 +79,7 @@ Unified Telemetry is used for Device Analytics, the device will send analytical 
 - IS USER HORIZON VERIFIED
 - ALL APPLICATION ID, INSTALL TIME, ERRORS, PACKAGE HASH, PACKAGE MANIFEST, PACKAGE PACKAGE SIGNATURES
 
-The device sends this data to thee endpoint htttps://graph.facebook.com/logging_client_events the post packet contains a X-FB debug header alongside a specially crafted user-agent containing information such as:
+The device sends this data to thee endpoint https://graph.facebook.com/logging_client_events the post packet contains a X-FB debug header alongside a specially crafted user-agent containing information such as:
 - FB_APP_NAME = "FBAN";
 - FB_APP_VERSION = "FBAV";
 - FB_APP_VERSION_MAP = "FBVM";
@@ -93,6 +93,7 @@ The device sends this data to thee endpoint htttps://graph.facebook.com/logging_
 - FB_MANUFACTURER = "FBMF";
 - FB_PACKAGE_NAME = "FBPN";
 - FB_SYSTEM_VERSION = "FBSV";
+An example of an average post request can be found [here](exmp)
 ### GatekeeperService
 The GatekeeperService is the service that stores GK sourced server-side via the VRruntimeServer, GK's are systemwide variables that decide whether a device can have access to certain features. The Service uses the com.oculus.permission.WRITE.GKS permission to write GK's to a device.
 #### Why GK's are Important
