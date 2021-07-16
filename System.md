@@ -138,7 +138,7 @@ Not much is known about this application as it is not user accessible. The only 
 ### Stats Collector
 As the name implies, it collects stats from the device. Stats such as the following are collected.
 - oculus_mobile_disk_io_by_uid
-- culus_mobile_lmk_kill_events
+- oculus_mobile_lmk_kill_events
 - oculus_mobile_low_storage_events
 - oculus_mobile_thermal_throttling_events
 - oculus_mobile_wall_clock_events
