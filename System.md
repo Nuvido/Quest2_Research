@@ -1,4 +1,4 @@
-# Quest_Research
+# Quest Research
 ## Background Information
 The Oculus Quest 2 is a HMD running the Snapdragon XR2. The device runs on a highly modified version of Android 10, running the 2020 September security patch.
 ## Glossary
@@ -95,6 +95,12 @@ The device sends this data to thee endpoint htttps://graph.facebook.com/logging_
 - FB_SYSTEM_VERSION = "FBSV";
 ### GatekeeperService
 The GatekeeperService is the service that stores GK sourced server-side via the VRruntimeServer, GK's are systemwide variables that decide whether a device can have access to certain features. The Service uses the com.oculus.permission.WRITE.GKS permission to write GK's to a device.
+#### Why GK's are Important
+GK's can been seen in all Oculus software, this includes The desktop app, the mobile app and headset. GK's often reveal information regarding new features that are only enabled on internal devices, the GK's can also enable updates and Killswitch's.
+#### An example of a GK Request and Response
+The application on launch will send GET request to the url https://graph.facebook.com/v11.0/1517832211847102/mobile_sdk_gk?fields=gatekeepers&format=json&sdk_version=11.0.0&sdk=android&platform=android with fields stating the SDK version and platform, the server will then respond with the following [headers](header)
+
+
 ### VrShell
 VrShell is arguably the most important application on the entire device, it manages Cursor Movement, Notifications, System 2D panels, Main nav host, System dialogue, Quick Experiments, Keyboard Rendering, etc. However, found in the application is a code library known as Panelapp, this contains all the panels the user will not see, the panels found within the library are related to Dogfooding, Debug or GauntletTests. The first Panel Dogfood contains information regarding OTA Updates, Developer Settings (ADB & MTP), Current Build, Current system application builds and any assignments a device has been given. A normal user is able to access this Panel by passing a specifically crafted intent. The next panel is Debug, this is an In-House non-user-accessible panel, it checks for certain GK's before running, however, the panel contains the following The adjusting of GK's, System preferences, Shell preferences, Debug preferences, App status, Test actions i.e Local account mode, Controller repair, Disabling of Telemetry, System dialogue debug, and xrsp. VrShell also has enterprise-specific Settings and dialogue.
 ### VrDriver
