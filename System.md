@@ -97,7 +97,7 @@ The device sends this data to thee endpoint https://graph.facebook.com/logging_c
 An example of an average post request can be found [here](exmp), a closer analysis reveals some intresting information.
 - Oculus have unlocked devices
 - Oculus have devices with custom bootloaders
-- Oculus use a sandbox system similar to instangram 
+- Oculus use a sandbox system similar to instagram 
 - Oculus have multiple log types
 - Multiple device types (User, dev and internal)
 - The user is called twsvcscm
