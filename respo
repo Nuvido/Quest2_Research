@@ -1,0 +1,114 @@
+{
+  "data":[ {
+    "gatekeepers":[ {
+      "key":"FBSDKFeatureInstrument","value":true
+    }
+    , {
+      "key":"FBSDKFeatureCrashReport","value":true
+    }
+    , {
+      "key":"FBSDKFeatureAnrReport","value":false
+    }
+    , {
+      "key":"FBSDKFeatureRestrictiveDataFiltering","value":true
+    }
+    , {
+      "key":"FBSDKFeatureCodelessEvents","value":true
+    }
+    , {
+      "key":"FBSDKFeatureErrorReport","value":false
+    }
+    , {
+      "key":"FBSDKFeatureAAMR1","value":false
+    }
+    , {
+      "key":"FBSDKFeatureAAMR2","value":false
+    }
+    , {
+      "key":"FBSDKFeatureAAM","value":true
+    }
+    , {
+      "key":"FBSDKFeatureSuggestedEvents","value":false
+    }
+    , {
+      "key":"FBSDKFeatureCrashShield","value":true
+    }
+    , {
+      "key":"FBSDKFeatureThreadCheck","value":false
+    }
+    , {
+      "key":"FBSDKFeaturePrivacyProtection","value":true
+    }
+    , {
+      "key":"FBSDKFeaturePIIFiltering","value":true
+    }
+    , {
+      "key":"FBSDKFeatureAddressDetectionSample","value":false
+    }
+    , {
+      "key":"FBSDKFeatureMTML","value":true
+    }
+    , {
+      "key":"FBSDKFeatureModelRequest","value":true
+    }
+    , {
+      "key":"FBSDKFeatureEventDeactivation","value":true
+    }
+    , {
+      "key":"FBSDKFeatureChromeCustomTabsUpdate","value":true
+    }
+    , {
+      "key":"FBSDKFeatureChromeCustomTabsPrefetching","value":false
+    }
+    , {
+      "key":"FBSDKFeatureIntelligentIntegrity","value":false
+    }
+    , {
+      "key":"FBSDKFeatureIntegritySample","value":false
+    }
+    , {
+      "key":"FBSDKFeatureMonitoring","value":false
+    }
+    , {
+      "key":"FBSDKFeatureATELogging","value":true
+    }
+    , {
+      "key":"FBSDKFeatureOnDeviceEventProcessing","value":false
+    }
+    , {
+      "key":"FBSDKFeatureOnDevicePostInstallEventProcessing","value":false
+    }
+    , {
+      "key":"FBSDKFeatureSKAdNetwork","value":true
+    }
+    , {
+      "key":"FBSDKFeatureSKAdNetworkConversionValue","value":true
+    }
+    , {
+      "key":"FBSDKFeatureIAPLogging","value":false
+    }
+    , {
+      "key":"FBSDKFeatureIAPLoggingLib2","value":false
+    }
+    , {
+      "key":"FBSDKFeatureUshbaLogin","value":true
+    }
+    , {
+      "key":"FBSDKFeatureBypassAppSwitch","value":false
+    }
+    , {
+      "key":"FBSDKFeatureWebViewSchemeFiltering","value":true
+    }
+    , {
+      "key":"FBSDKFeatureAEM","value":false
+    }
+    , {
+      "key":"app_events_if_auto_log_subs","value":true
+    }
+    , {
+      "key":"app_events_killswitch","value":false
+     }
+    ]
+  }
+  ]
+}
