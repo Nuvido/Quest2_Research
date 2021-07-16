@@ -93,7 +93,14 @@ The device sends this data to thee endpoint https://graph.facebook.com/logging_c
 - FB_MANUFACTURER = "FBMF";
 - FB_PACKAGE_NAME = "FBPN";
 - FB_SYSTEM_VERSION = "FBSV";
-An example of an average post request can be found [here](exmp)
+##### A closer analysis of a Logging Event 
+An example of an average post request can be found [here](exmp), a closer analysis reveals some intresting information.
+- Oculus have unlocked devices
+- Oculus have devices with custom bootloaders
+- Oculus use a sandbox system similar to instangram 
+- Oculus have multiple log types
+- Multiple device types (User, dev and internal)
+- The user is called twsvcscm
 ### GatekeeperService
 The GatekeeperService is the service that stores GK sourced server-side via the VRruntimeServer, GK's are systemwide variables that decide whether a device can have access to certain features. The Service uses the com.oculus.permission.WRITE.GKS permission to write GK's to a device.
 #### Why GK's are Important
@@ -108,7 +115,7 @@ VrDriver manages certain system variables i.e 120hz support or hand tracking fre
 ### System UX
 Runs UX related code, i.e spinners, buttons, checkbox's etc.
 
-[SystemUx Intents as of v29](SystemUX_Intents)
+[Systemux Intents as of v29](SystemUX_Intents)
 ### OSUpdater
 Retrieves Latest OS update from Oculus servers and installs the update, Also monitors system vital signs such as battery and wifi. The application logs many details of the update.
 ### ChargeControl
@@ -134,8 +141,8 @@ As the name implies, it collects stats from the device. Stats such as the follow
 - culus_mobile_lmk_kill_events
 - oculus_mobile_low_storage_events
 - oculus_mobile_thermal_throttling_events
-- culus_mobile_wall_clock_events
-- culus_mobile_wifi_enabled_events
+- oculus_mobile_wall_clock_events
+- oculus_mobile_wifi_enabled_events
 - Various BLE information
 ### Companion Server
 Companion server is an admin application that manages the device and does the following.
